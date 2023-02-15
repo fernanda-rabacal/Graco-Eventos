@@ -4,14 +4,10 @@ const yearSpan = document.getElementById('year')
 yearSpan.innerHTML = year
 
 function sendEmail(){
-  let nome = document.querySelector('input[name=nome]') 
-  nome = nome.value;
-  let telefone = document.querySelector('input[name=telefone]') 
-  telefone = telefone.value;
-  let email = document.querySelector('input[name=email]')
-  email = email.value;
-  let mensagem = document.querySelector('#mensagem')
-  mensagem = mensagem.value;
+  let nome = document.querySelector('input[name=nome]').value;
+  let telefone = document.querySelector('input[name=telefone]').value;
+  let email = document.querySelector('input[name=email]').value;
+  let mensagem = document.querySelector('#mensagem').value;
 
   let body = "Olá Graco eventos! \n" + mensagem + "\n\n Att, \n " + nome + "\n" + telefone
 
