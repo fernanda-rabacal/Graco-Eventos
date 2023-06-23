@@ -1,6 +1,9 @@
 window.addEventListener('scroll', onScroll)
 const year = new Date().getFullYear()
 const yearSpan = document.getElementById('year')
+const menus = document.querySelectorAll('.nav-menu')
+
+menus.forEach(menu => menu.addEventListener("click", closeMenu))
 yearSpan.innerHTML = year
 
 function sendEmail(){
@@ -13,7 +16,7 @@ function sendEmail(){
 
   Email.send({
     SecureToken : "1f67df15-2479-45c9-86fe-79190ae4275e",
-    To : 'gracoeventos@gmail.com',
+    To: 'gracoeventos@gmail.com',
     From : email,
     Subject : "Contato " + nome,
     Body : body

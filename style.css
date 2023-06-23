@@ -3,56 +3,46 @@
   src: url("./fonts/August_Script.ttf");
 }
 
+:root {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-:root {
-  font-size: 62.5%;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-html,body{
-  width: 100%;
-  height: 100%;
-}
-
-
 body {
   font-family: 'DM Sans';
   font-size: 1.8rem;
-  color: #FFFFFF;
-  background: #000000;
+  color: #000000;
+  background: #ffffff;
 }
 
 .wrapper {
-  width: min(50rem, 100%);
+  width: min(60rem, 100%);
   margin-inline: auto;
   padding-inline: 2.4rem;
+}
+
+a {   
+  color: #000000;
+  text-decoration: none;
 }
 
 ul {
   list-style: none;
 }
 
-a {   
-  color: #FFFFFF;
-  text-decoration: none;
+#home {
+  margin: 15rem auto 2rem;
 }
 
 #home img {
-  width: 130vw;
-  object-position: 0 0;
-  overflow: hidden;
-}
-
-#about {
-  margin-top: -15rem;
+  width: 30vw;
+  min-width: 30rem
 }
 
 button {
@@ -69,6 +59,7 @@ section h2 {
   font-family: AugustScript;
 }
 
+
 section .wrapper > p {
   font-size: 2rem;
   line-height: 150%;
@@ -77,8 +68,8 @@ section .wrapper > p {
 }
 
 nav {
-  background: #000;
-  border-bottom: 1px solid #2f2f2f;
+  background: #ffffff;
+  border-bottom: 1px solid #4b4b4b;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -103,6 +94,10 @@ nav .logo {
   color: #FFF;
   font-family: AugustScript;
   font-weight: 700;
+}
+
+#navigation img {
+  width: 22rem;
 }
 
 nav .disabled {
@@ -279,12 +274,8 @@ footer p {
 }
 
 @media (min-width: 1024px) {
-  body {
-    overflow: auto;
-  }
   .wrapper {
-    width: min(112rem, 100%);
-    display: grid;
+    width: min(110rem, 100%);
   }
 
   section h2 {
@@ -337,11 +328,6 @@ footer p {
     transition: opacity .4s;
   }
   
-  nav#navigation.scroll .menu ul li a {
-    color: var(--brand-greenlight);
-    opacity: 0.6;
-  }
-  
   nav#navigation .menu li a:not(.disabled):hover {
     font-weight: bold;
     opacity: 1;
@@ -353,31 +339,6 @@ footer p {
     font-weight: bold;
     opacity: 1;
   } 
-  
-  nav#navigation .menu li a:not(.disabled)::after{
-    content: '';
-    width: 0;
-    height: .2rem;
-    background-color: #FFF;
-
-    display: block;
-
-    position: relative;
-    bottom: -1.8rem;
-    left: -.5rem;
-
-    transition: width 0.2s;
-  }
-  
-  nav#navigation.scroll .menu li a::after {
-    background-color: #FFF ;
-  }
-  
-  nav#navigation .menu li a.active::after,
-  nav#navigation .menu li a:hover::after{
-    padding-inline: .8rem;
-    width: 100%;
-  }
 
   section#contact .wrapper {
   display: flex;
