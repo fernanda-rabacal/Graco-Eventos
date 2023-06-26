@@ -159,7 +159,7 @@ section#home {
 }
 
 section#home img {
-  width: 60vw;
+  width: 80vw;
   min-width: 40rem
 }
 
@@ -326,10 +326,6 @@ footer p {
     font-weight: 700;
     opacity: 1;
   } 
-
-  nav .logo img {
-    width: 10rem
-  }
 
   section#contact .wrapper {
   display: flex;
