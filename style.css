@@ -160,7 +160,8 @@ section#home {
 
 section#home img {
   width: 80vw;
-  min-width: 40rem
+  min-width: 40rem;
+  max-width: 110rem;
 }
 
 section#contact .wrapper {
@@ -328,10 +329,10 @@ footer p {
   } 
 
   section#contact .wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   
   .phone-contact svg {
