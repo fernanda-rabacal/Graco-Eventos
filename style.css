@@ -159,7 +159,6 @@ section#home {
 }
 
 section#home img {
-  width: 80vw;
   min-width: 40rem;
   max-width: 110rem;
 }
