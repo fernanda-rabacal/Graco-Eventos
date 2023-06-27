@@ -155,7 +155,7 @@ body.menu-expanded button {
 section#home {
   display: flex;
   justify-content: center;
-  margin: 12vh auto 6rem;
+  padding: 12vh 0 6rem;
 }
 
 section#home img {
