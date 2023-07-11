@@ -239,7 +239,6 @@ section#contact button:hover {
   padding: 0;
   display: flex;
   gap: 1rem;
-  border-bottom: 1px solid #000000;
 }
 
 footer {
